@@ -1,0 +1,121 @@
+*,
+html,
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  height: 100vh;
+  background-size: cover;
+}
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  color: goldenrod;
+  text-align: center;
+}
+button {
+  margin: 5px;
+}
+p {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#message-el {
+  font-weight: bold;
+  text-align: center;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+small {
+  margin-top: 1em;
+  justify-content: center;
+  display: flex;
+  color: #fcba5d;
+}
+
+input[type="text"] {
+  margin-top: 1em;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  font-family: inherit;
+  font-size: inherit;
+  margin-left: 1em;
+}
+
+#btnName {
+  background: #fcba5d;
+  border: 0;
+  border-radius: 10px;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+section {
+  background-size: cover;
+  background: url(/assets/BlackJack.jpg);
+}
+.judul {
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 65%;
+  width: 50%;
+  margin: auto;
+}
+
+.sectionPlay {
+  height: 100vh;
+  background-size: cover;
+}
+.sectionInfo {
+  height: 100vh;
+  background-size: cover;
+}
+
+.intro {
+  height: 100vh;
+  background-size: cover;
+}
+.urut {
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#gameOver {
+  text-align: center;
+}
+.tombol {
+  font-size: 20px;
+}
+.section-body {
+  margin-top: 12px;
+  border: solid 3px #eee;
+  border-radius: 14px;
+  padding: 7px 15px;
+  text-shadow: 1px 1px 1px #333;
+  margin: auto;
+  align-items: center;
+  width: 600px;
+  height: 220px;
+  justify-content: center;
+}
