@@ -22,9 +22,15 @@ let playerMoney = document.getElementById("playerMoney");
 
 function nameP() {
   let name = document.getElementById("nama").value;
-  let yourName = document.getElementById("yourName");
-  yourName.textContent = "WELCOME " + name + " TO BLACKJACK GAME!";
-  alert("Your Name is " + name);
+  if (name !== "") {
+    let yourName = document.getElementById("yourName");
+    yourName.textContent = "WELCOME " + name + " TO BLACKJACK GAME!";
+    document.getElementById("nama").value = "";
+
+    alert("Your Name is " + name);
+  } else {
+    alert("Input Your Name!");
+  }
 }
 
 function startGame() {
