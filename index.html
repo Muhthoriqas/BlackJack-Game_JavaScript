@@ -33,21 +33,20 @@
 
   <section class="intro">
     <input type="text" id="nama" placeholder="Type Your Name..">
-    <button type="button" class ="btnName" id="btnName" onclick="nameP()">SUBMIT</button>
+    <button type="button" class ="btnName"  onclick="nameP()">SUBMIT</button>
     <div class="judul mt-4" id="yourName" style="text-transform:uppercase">WELCOME TO<br />BLACKJACK GAME!</div>
   </section>
   
   <section id="play" class="sectionPlay"  >
     <br>
     <h1>BlackJack</h1>
-    <h1 id="greeting-el"></h1>
     <h2 id="message-el">Play A Round?<h2/>
     <p id="card-el">Your Cards: </p>
     <p id="sum-el">Sum:</p>
     <div class="center">
   
       <button type="button" class="tombol btn btn-warning" id="start" onclick="startGame()">START GAME</button>
-      <button type="button" class="tombol btn btn-dark" id="newGame" onclick="newCard()">TAKE CARD</button>
+      <button type="button" class="tombol btn btn-dark"  onclick="newCard()">TAKE CARD</button>
   
     </div>
     <small id="gameOver"></small> 
@@ -56,7 +55,7 @@
       <input type="number" step=1 id="bet" placeholder="Set Your Bet..">
     </div>
     <div class="bet">
-      <button type="button" class ="btnName" id="btnBet" onclick="resetMoney()">RESET MONEY</button>
+      <button type="button" class ="btnName" onclick="resetMoney()">RESET MONEY</button>
     </div>
 
   </section>
@@ -73,9 +72,6 @@
         </li>
         <li>
           Kartu AS Bernilai 11 dan J/Q/K Bernilai 10.
-        </li>
-        <li>
-          Apabila Kartu Pertama adalah As dan 10/J/Q/L, Artinya Kamu Mendapatkan BlackJack.
         </li>
         <li>Jika Jumlah Kedua Kartu Belum Bernilai 21(BlackJack), Maka Kamu Dapat Terus Menambah Kartu.
         </li>

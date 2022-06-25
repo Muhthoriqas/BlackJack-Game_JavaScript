@@ -142,12 +142,12 @@ section {
   margin-top: 12px;
   border: solid 3px #eee;
   border-radius: 14px;
-  padding: 7px 15px;
+  padding: 7px 10px;
   text-shadow: 1px 1px 1px #333;
   margin: auto;
   align-items: center;
   width: 600px;
-  height: 220px;
+  height: 180px;
   justify-content: center;
 }
 
