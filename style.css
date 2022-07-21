@@ -98,7 +98,7 @@ small {
 }
 section {
   background-size: cover;
-  background: url(/assets/BlackJack.jpg);
+  background: url(./assets/BlackJack.jpg);
 }
 .judul {
   font-size: 4em;
