@@ -146,8 +146,8 @@ section {
   text-shadow: 1px 1px 1px #333;
   margin: auto;
   align-items: center;
-  width: 600px;
-  height: 180px;
+  max-width: 500px;
+  max-height: 600px;
   justify-content: center;
 }
 
