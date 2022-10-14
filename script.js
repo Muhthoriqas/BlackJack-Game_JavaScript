@@ -1,9 +1,7 @@
-let BlackJack;
 let cards = [];
 let sum = 0;
 let hasBlackJack = false;
 let notStart = true;
-
 let isAlive = false;
 
 let message = "";
@@ -14,26 +12,16 @@ let cardEl = document.getElementById("card-el");
 let sumEl = document.getElementById("sum-el");
 
 let startAgain = document.getElementById("start");
+
 let player = {
   playerName: "Your",
   Money: 5000,
 };
+
 let playerMoney = document.getElementById("playerMoney");
 playerMoney.innerText = player.playerName + " Money: Rp." + player.Money;
 
-function nameP() {
-  let name = document.getElementById("nama").value;
-  if (name !== "") {
-    let yourName = document.getElementById("yourName");
-    yourName.textContent = "WELCOME " + name + " TO BLACKJACK GAME!";
-    document.getElementById("nama").value = "";
-
-    alert("Your Name is " + name);
-  } else {
-    alert("Input Your Name!");
-  }
-}
-
+// Function untuk logic sebelum start
 function startGame() {
   let bet = document.getElementById("bet").value;
 
@@ -47,7 +35,9 @@ function startGame() {
       notStart = false;
       player.Money -= bet;
       playerMoney.innerText = player.playerName + " Money: Rp." + player.Money;
+      document.getElementById("bet").value = "";
       startAgain.textContent = "WANT TO PLAY AGAIN?";
+
       gameBegin();
     } else {
       alert("Your Bet is 0, Plese Set Your bet > 0!");
@@ -57,10 +47,13 @@ function startGame() {
   } else if (player.Money === 0) {
     alert("Your Money is = 0, Please Reset Money!");
   } else {
-    alert("Your Money is < Bet, Please Reset Money or Change Bet!");
+    alert(
+      "Your money is less than your bet, Please Reset Money or Change your Bet!"
+    );
   }
 }
 
+// Function untuk menampilkan kartu dan hasil permainan
 function gameBegin() {
   hasBlackJack = false;
   cardEl.textContent = "YourCards: ";
@@ -88,6 +81,7 @@ function gameBegin() {
   messageGameOver.textContent = "";
 }
 
+// Function untuk menarik kartu baru
 function newCard() {
   if (notStart === true) {
     messageGameOver.textContent = "Please Start Game First!";
@@ -110,6 +104,7 @@ function newCard() {
   }
 }
 
+// Function merandom kartu (untuk 2 kartu pertama dan tarik kartu)
 function getRandomCard() {
   let randomNumber = Math.floor(1 + Math.random() * 13);
   if (randomNumber === 1) {
@@ -120,6 +115,8 @@ function getRandomCard() {
     return randomNumber;
   }
 }
+
+// Untuk reset uang
 function resetMoney() {
   player.Money = 5000;
   playerMoney.innerText = player.playerName + " Money: Rp." + player.Money;

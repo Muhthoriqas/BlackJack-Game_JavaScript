@@ -1,16 +1,15 @@
-*,
-html,
-body {
+* {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
-
 body {
   color: white;
-  height: 100vh;
+}
+section {
+  background: url(./assets/BlackJack.jpg);
   background-size: cover;
 }
 h1 {
@@ -19,150 +18,41 @@ h1 {
   color: goldenrod;
   text-align: center;
 }
-button {
-  margin: 5px;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  box-sizing: border-box;
-  overflow: hidden;
-  background: goldenrod;
-  border-radius: 5px;
-  z-index: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: all 0.5s;
-  color: #fff;
-}
-button:hover {
-  background: gray;
-}
-button::before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: -50px;
-  width: 70%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, #ffffff71, transparent);
-  transition: all 1s;
-  z-index: -1;
-  transform: translate(-120px) skew(-20deg);
-}
-button:hover::before {
-  transform: translate(300px) skew(-20deg);
-}
 p {
   margin-top: 50px;
-  text-align: center;
 }
-
 #message-el {
   font-weight: bold;
   text-align: center;
 }
-
+.btn {
+  margin: 5px;
+  font-size: 20px;
+}
 .center {
   align-items: center;
   display: flex;
   justify-content: center;
 }
-
-small {
+.gameOver {
   margin-top: 1em;
-  justify-content: center;
-  display: flex;
   color: #fcba5d;
 }
-
-#nama {
-  cursor: pointer;
-  margin-top: 1em;
-  padding: 10px;
-  border: 0;
-  border-radius: 10px;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-  font-family: inherit;
-  font-size: inherit;
-  margin-left: 1em;
-}
-
-#btnName {
-  border: 0;
-  border-radius: 10px;
-  color: black;
-  padding: 10px;
-  font-weight: bold;
-  cursor: pointer;
-}
-section {
-  background-size: cover;
-  background: url(./assets/BlackJack.jpg);
-}
-.judul {
-  font-size: 4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 65%;
-  width: 50%;
-  margin: auto;
-}
-
 .sectionPlay {
   height: 100vh;
-  background-size: cover;
-}
-.sectionInfo {
-  height: 100vh;
-  background-size: cover;
-}
-
-.intro {
-  height: 100vh;
-  background-size: cover;
-}
-.urut {
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-#gameOver {
   text-align: center;
 }
-.tombol {
-  font-size: 20px;
-}
-.section-body {
-  margin-top: 12px;
-  border: solid 3px #eee;
-  border-radius: 14px;
-  padding: 7px 10px;
-  text-shadow: 1px 1px 1px #333;
-  margin: auto;
-  align-items: center;
-  max-width: 500px;
-  max-height: 600px;
-  justify-content: center;
-}
-
 .bet {
   display: flex;
   justify-content: center;
 }
-
 #bet {
   padding: 3px;
   border-radius: 50px;
   width: 45%;
   text-align: center;
 }
-.btnName {
+.btnReset {
   margin-top: 1em;
   padding: 5px;
   background-color: goldenrod;
