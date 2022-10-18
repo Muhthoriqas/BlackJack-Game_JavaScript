@@ -35,7 +35,6 @@ function startGame() {
       notStart = false;
       player.Money -= bet;
       playerMoney.innerText = player.playerName + " Money: Rp." + player.Money;
-      document.getElementById("bet").value = "";
       startAgain.textContent = "WANT TO PLAY AGAIN?";
 
       gameBegin();
@@ -65,7 +64,8 @@ function gameBegin() {
     let bet = document.getElementById("bet").value;
     message = "Yo Got BlackJack!";
     hasBlackJack = true;
-    player.Money += bet * 6;
+    player.Money = player.Money + bet * 6;
+    console.log(bet);
     playerMoney.innerText = player.playerName + " Money: Rp." + player.Money;
     document.getElementById("bet").value = "";
   } else if (sum <= 20) {
